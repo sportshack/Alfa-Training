@@ -11,6 +11,7 @@
 		427C46021B63D70100EA89C5 /* JBBarChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 427C45FD1B63D70100EA89C5 /* JBBarChartView.m */; };
 		427C46031B63D70100EA89C5 /* JBChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 427C45FF1B63D70100EA89C5 /* JBChartView.m */; };
 		427C46041B63D70100EA89C5 /* JBLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 427C46011B63D70100EA89C5 /* JBLineChartView.m */; };
+		427C46071B63D80000EA89C5 /* IMFCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 427C46051B63D80000EA89C5 /* IMFCore.framework */; };
 		5401E01E1A93DA2600FADC22 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5401E01D1A93DA2600FADC22 /* main.m */; };
 		5401E0211A93DA2600FADC22 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5401E0201A93DA2600FADC22 /* AppDelegate.m */; };
 		5401E0241A93DA2600FADC22 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5401E0231A93DA2600FADC22 /* ViewController.m */; };
@@ -42,6 +43,7 @@
 		427C45FF1B63D70100EA89C5 /* JBChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBChartView.m; sourceTree = "<group>"; };
 		427C46001B63D70100EA89C5 /* JBLineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBLineChartView.h; sourceTree = "<group>"; };
 		427C46011B63D70100EA89C5 /* JBLineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBLineChartView.m; sourceTree = "<group>"; };
+		427C46051B63D80000EA89C5 /* IMFCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IMFCore.framework; sourceTree = "<group>"; };
 		5401E0181A93DA2600FADC22 /* MuseStatsIos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuseStatsIos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5401E01C1A93DA2600FADC22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5401E01D1A93DA2600FADC22 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 			files = (
 				E91B78621B03B8A300082B2E /* libMuse.a in Frameworks */,
 				E94FB6F01B03B53400B73B4B /* libc++.dylib in Frameworks */,
+				427C46071B63D80000EA89C5 /* IMFCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +105,7 @@
 				E91B78611B03B8A300082B2E /* libMuse.a */,
 				427C45FB1B63D70100EA89C5 /* JBChartView */,
 				E94FB6EF1B03B53400B73B4B /* libc++.dylib */,
+				427C46051B63D80000EA89C5 /* IMFCore.framework */,
 				5401E01A1A93DA2600FADC22 /* MuseStatsIos */,
 				5401E0341A93DA2600FADC22 /* MuseStatsIosTests */,
 				5401E0191A93DA2600FADC22 /* Products */,
@@ -400,7 +404,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -422,7 +429,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,

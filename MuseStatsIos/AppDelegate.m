@@ -6,6 +6,7 @@
 #import "AppDelegate.h"
 
 #import "LoggingListener.h"
+//#import <IMFCore/IMFCore.h>
 
 @interface AppDelegate ()
 
@@ -157,6 +158,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //IMFClient *imfClient = [IMFClient sharedInstance];
+    //[imfClient initializeWithBackendRoute:@"https://alfa-training.mybluemix.net" backendGUID:@"8cdc74f3-445b-46eb-8a39-97677984e027"];
     return YES;
 }
 
