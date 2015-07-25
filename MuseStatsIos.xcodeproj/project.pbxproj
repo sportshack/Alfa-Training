@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		427C45FA1B63D6E100EA89C5 /* ProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 427C45F91B63D6E100EA89C5 /* ProgressViewController.m */; };
+		427C46021B63D70100EA89C5 /* JBBarChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 427C45FD1B63D70100EA89C5 /* JBBarChartView.m */; };
+		427C46031B63D70100EA89C5 /* JBChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 427C45FF1B63D70100EA89C5 /* JBChartView.m */; };
+		427C46041B63D70100EA89C5 /* JBLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 427C46011B63D70100EA89C5 /* JBLineChartView.m */; };
 		5401E01E1A93DA2600FADC22 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5401E01D1A93DA2600FADC22 /* main.m */; };
 		5401E0211A93DA2600FADC22 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5401E0201A93DA2600FADC22 /* AppDelegate.m */; };
 		5401E0241A93DA2600FADC22 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5401E0231A93DA2600FADC22 /* ViewController.m */; };
@@ -30,6 +34,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		427C45F81B63D6E100EA89C5 /* ProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressViewController.h; sourceTree = "<group>"; };
+		427C45F91B63D6E100EA89C5 /* ProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressViewController.m; sourceTree = "<group>"; };
+		427C45FC1B63D70100EA89C5 /* JBBarChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBBarChartView.h; sourceTree = "<group>"; };
+		427C45FD1B63D70100EA89C5 /* JBBarChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBBarChartView.m; sourceTree = "<group>"; };
+		427C45FE1B63D70100EA89C5 /* JBChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBChartView.h; sourceTree = "<group>"; };
+		427C45FF1B63D70100EA89C5 /* JBChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBChartView.m; sourceTree = "<group>"; };
+		427C46001B63D70100EA89C5 /* JBLineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBLineChartView.h; sourceTree = "<group>"; };
+		427C46011B63D70100EA89C5 /* JBLineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBLineChartView.m; sourceTree = "<group>"; };
 		5401E0181A93DA2600FADC22 /* MuseStatsIos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuseStatsIos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5401E01C1A93DA2600FADC22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5401E01D1A93DA2600FADC22 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -70,11 +82,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		427C45FB1B63D70100EA89C5 /* JBChartView */ = {
+			isa = PBXGroup;
+			children = (
+				427C45FC1B63D70100EA89C5 /* JBBarChartView.h */,
+				427C45FD1B63D70100EA89C5 /* JBBarChartView.m */,
+				427C45FE1B63D70100EA89C5 /* JBChartView.h */,
+				427C45FF1B63D70100EA89C5 /* JBChartView.m */,
+				427C46001B63D70100EA89C5 /* JBLineChartView.h */,
+				427C46011B63D70100EA89C5 /* JBLineChartView.m */,
+			);
+			path = JBChartView;
+			sourceTree = "<group>";
+		};
 		5401E00F1A93DA2600FADC22 = {
 			isa = PBXGroup;
 			children = (
 				E91B78631B03B8F500082B2E /* Muse.h */,
 				E91B78611B03B8A300082B2E /* libMuse.a */,
+				427C45FB1B63D70100EA89C5 /* JBChartView */,
 				E94FB6EF1B03B53400B73B4B /* libc++.dylib */,
 				5401E01A1A93DA2600FADC22 /* MuseStatsIos */,
 				5401E0341A93DA2600FADC22 /* MuseStatsIosTests */,
@@ -99,6 +125,8 @@
 				5401E0221A93DA2600FADC22 /* ViewController.h */,
 				5401E0231A93DA2600FADC22 /* ViewController.m */,
 				5401E0251A93DA2600FADC22 /* Main.storyboard */,
+				427C45F81B63D6E100EA89C5 /* ProgressViewController.h */,
+				427C45F91B63D6E100EA89C5 /* ProgressViewController.m */,
 				5401E0281A93DA2600FADC22 /* Images.xcassets */,
 				5401E02A1A93DA2600FADC22 /* LaunchScreen.xib */,
 				5401E01B1A93DA2600FADC22 /* Supporting Files */,
@@ -240,8 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				427C45FA1B63D6E100EA89C5 /* ProgressViewController.m in Sources */,
 				5401E0241A93DA2600FADC22 /* ViewController.m in Sources */,
 				54EB6BC91AA0EAA3000D8142 /* LoggingListener.m in Sources */,
+				427C46031B63D70100EA89C5 /* JBChartView.m in Sources */,
+				427C46021B63D70100EA89C5 /* JBBarChartView.m in Sources */,
+				427C46041B63D70100EA89C5 /* JBLineChartView.m in Sources */,
 				5401E0211A93DA2600FADC22 /* AppDelegate.m in Sources */,
 				5401E01E1A93DA2600FADC22 /* main.m in Sources */,
 			);
